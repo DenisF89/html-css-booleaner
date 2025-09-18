@@ -137,6 +137,7 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    box-sizing: border-box;
 }
 
 #Articolo2{
