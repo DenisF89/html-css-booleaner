@@ -1,1 +1,87 @@
-h1 {color:blue;}
+body { margin: 0;  /* elimina spazio bianco */
+       font-family:'Times New Roman', Times, serif;
+}
+
+.container{ /*centra sempre contenuto nella pagina*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*-------------------HEADER----------------------*/
+
+header{
+    height: 120px;
+    background-color:#3d76f1;
+    background-image: url(./img/pattern.png);
+    background-repeat: repeat-x;
+    background-size:350px;
+    /* position: relative; */
+}
+
+#testata{
+    /* FLEXBOX - per allineare in basso il logo */
+    height: inherit; /*da header*/
+    display: flex;
+    align-items: flex-end;
+    /* ALTERNATIVA CON POSITION RELATIVE/ABSOLUTE
+    position: relative; */
+}
+
+#logo{
+    width: 250px;
+    /*  ALTERNATIVA CON POSITION RELATIVE/ABSOLUTE
+        position: absolute;
+        bottom: 0px; 
+        --------------------------
+        ALTERNATIVA CON MARGIN-TOP
+        margin-top:50px;
+    */
+}
+
+/*-----------------ARTICOLO-------------------*/
+
+    /* titolo */
+h1 {color:black;
+    font-size: 40px;
+    font-weight:800;
+    letter-spacing: -2px;
+    margin-bottom: 0px;
+}
+
+address{
+    font-size: 20px;
+    font-style:normal;
+    font-weight: 800;
+    color: grey;
+}
+#author{
+    color: #5bb7f5;
+}
+time{
+      color: grey;
+      font-weight: 800;
+}
+
+/*-----------------IMMAGINI---------------------*/
+figure{
+    margin: 0;
+}
+.blocco{
+    display: block; /* immagini a capo */
+    margin-bottom: 5px;
+} 
+figcaption{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.mark_yellow{
+    background-color: yellow;
+}
+
+ul{
+    padding-left:15px; /* allineo la lista al testo (a 0px i punti escono)*/
+    list-style-position:outside; /* punti fuori dal testo (default) */
+    list-style-type:square; /* stile dei punti (cerchio,quadrato,ecc. */
+}
