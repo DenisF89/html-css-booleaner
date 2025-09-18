@@ -8,6 +8,10 @@ body { margin: 0;  /* elimina spazio bianco */
     padding: 0 20px;
 }
 
+section{
+    margin: 30px 0;
+}
+
 /*-------------------HEADER----------------------*/
 
 header{
@@ -69,7 +73,7 @@ time{
 
 /*-----------------IMMAGINI---------------------*/
 figure{
-    margin: 0;
+    margin: 20px 0;
 }
 .blocco{
     display: block; /* immagini a capo */
@@ -94,21 +98,59 @@ ul{
     width: 100%;
     border-collapse: collapse;
 }
-#lorem td, #lorem th{padding: 12px;}
+
+#lorem td, #lorem th{
+    padding: 12px;
+    font-weight: 800;
+    text-align: left;
+}
 
 #lorem th{
     background-color: blue;
     color:white;
-    text-align: left;
-    
 }
+
 #lorem td{
     height: 50px;
-    text-align: left;
     vertical-align: middle;
     width:25%;
 }
 
-#lorem td:nth-child(3){width:50%;}
+#lorem td:last-child{width:50%;}
 
-tr:nth-child(odd){background-color: #6fa9ef;}
+#lorem tr:nth-child(odd){background-color: #6fa9ef;}
+
+/*-----------------FOOTER--------------------*/
+
+h3{
+    color:gray;
+}
+
+.altri-articoli{
+    width: 250px;
+    height: 200px;
+    color: white;
+    font-weight: 800;
+    margin:  0 10px 10px 0;
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+#Articolo2{
+background-image: url(./img/monitor.jpg);
+}
+#Articolo3{
+background-image: url(./img/graph.jpg);
+}
+
+.altri-articoli a{
+    color:inherit;
+    text-decoration:none;
+}
+.altri-articoli a:hover{
+    color:aqua;
+    text-transform:uppercase;
+}
