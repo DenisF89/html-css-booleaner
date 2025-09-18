@@ -63,6 +63,10 @@ time{
       font-weight: 800;
 }
 
+.mark_yellow{
+    background-color: yellow;
+}
+
 /*-----------------IMMAGINI---------------------*/
 figure{
     margin: 0;
@@ -76,12 +80,35 @@ figcaption{
     font-size: 12px;
 }
 
-.mark_yellow{
-    background-color: yellow;
-}
 
+
+/*-----------------LISTA---------------------*/
 ul{
     padding-left:15px; /* allineo la lista al testo (a 0px i punti escono)*/
     list-style-position:outside; /* punti fuori dal testo (default) */
     list-style-type:square; /* stile dei punti (cerchio,quadrato,ecc. */
 }
+
+/*-----------------TABELLA---------------------*/
+#lorem{
+    width: 100%;
+    border-collapse: collapse;
+}
+#lorem td, #lorem th{padding: 12px;}
+
+#lorem th{
+    background-color: blue;
+    color:white;
+    text-align: left;
+    
+}
+#lorem td{
+    height: 50px;
+    text-align: left;
+    vertical-align: middle;
+    width:25%;
+}
+
+#lorem td:nth-child(3){width:50%;}
+
+tr:nth-child(odd){background-color: #6fa9ef;}
